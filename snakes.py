@@ -6,9 +6,13 @@ class Snake:
 class Cobra(Snake):
     """Definitely dangerous, yup."""
     
+    def__init__(self, fang_size):
+        self.fang_size = fang_size
+    
     def bite(self, other):
         """Deliver a dose of venom."""
-        pass
+        
+        other.injury += self.fang_size
 
     
 class BoaConstrictor(Snake):
